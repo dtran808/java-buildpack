@@ -15,8 +15,8 @@
 
 # Configuration for the AppDynamics framework
 ---
-version: 4.+
-repository_root: https://packages.appdynamics.com/java
+version: 4.5.4_24355
+repository_root: https://raw.githubusercontent.com/gedigital-apm/appdynamics-agents/master
 default_application_name: $(jq -r -n "$VCAP_APPLICATION | .space_name + \":\" + .application_name")
 default_node_name: $(jq -r -n "$VCAP_APPLICATION | .application_name + \":$CF_INSTANCE_INDEX\"")
 default_tier_name: 
